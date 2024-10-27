@@ -1,4 +1,4 @@
-# Cloudnetworking_Basics_GCP
+# Cloudnetworking_Basics
 30 days challenge to specialize in cloud networking_GCP 
 
 Day 1: GCP Cloud Networking – VPC & Basic Networking
