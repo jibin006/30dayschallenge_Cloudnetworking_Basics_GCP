@@ -36,6 +36,7 @@ o	Created multiple custom VPCs with different CIDR ranges.
 o	Explored default VPC and created new custom VPCs to understand the differences.
 o	Tested network isolation between VPCs.
 o	Set up VPC Peering to enable communication between two custom VPCs.
+
 Day 3: Subnets – Regional and Zonal Scope
 1.	Subnets Overview:
 o	Subnets are subdivisions of a VPC that define IP address ranges and serve as a foundation for networking in GCP.
@@ -73,6 +74,7 @@ o	Created a VPC and applied the principle of least privilege.
 o	Configured deny-all ingress and egress rules as defaults.
 o	Created allow rules for specific services (SSH, HTTP/HTTPS) with lower priority than the deny rule.
 o	Ensured allow rules are processed first by assigning lower priority values
+
 Day 6: Routes and Routing Tables – Static and Dynamic Routing
 1.	Routes and Routing Tables:
 o	Routes define paths for traffic within and outside a VPC.
@@ -86,6 +88,7 @@ o	GCP creates default routes for internal traffic within the VPC and internet ac
 o	Explored default routes in a VPC.
 o	Created a static route to direct traffic via a custom gateway.
 o	Set up a Cloud Router for dynamic routing to manage route updates automatically.
+
 Day 7: Cloud NAT – Concepts and Configuration
 1.	Cloud NAT Overview:
 o	Enables private instances (without external IPs) to securely access the internet for outbound connections.
@@ -96,6 +99,7 @@ o	Enabled NAT for private subnets to allow outbound internet access.
 3.	Testing:
 o	Verified internet access from a VM without an external IP using Cloud NAT.
 o	Monitored traffic and NAT activity in the Logs Explorer.
+
 Day 8: VPC Peering – How it Works and Configuration
 1.	VPC Peering Overview:
 o	Allows private communication between two VPC networks in GCP over Google’s internal network.
@@ -105,6 +109,7 @@ o	Created two VPCs (vpc-a and vpc-b) with unique CIDR ranges.
 o	Set up bidirectional peering connections and configured firewall rules for ICMP and SSH.
 3.	Testing:
 o	Verified connectivity by pinging between VMs in each VPC using private IPs, confirming the peering setup.
+
 Day 9: Shared VPCs – Centralizing Network Resources
 1.	Shared VPC Overview:
 o	Allows multiple projects to share a single VPC for centralized network management.
