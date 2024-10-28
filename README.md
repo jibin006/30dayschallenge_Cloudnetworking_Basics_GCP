@@ -2,20 +2,20 @@
 30 days challenge to specialize in cloud networking_GCP 
 
 Day 1: GCP Cloud Networking – VPC & Basic Networking
-1.	Introduction to GCP:
-o	Learned about Google Cloud Platform (GCP) as a cloud service provider.
-o	GCP offers scalable infrastructure with services like compute, storage, and networking.
-2.	Virtual Private Cloud (VPC):
-o	A VPC is a virtual network in GCP that isolates and manages cloud resources.
-o	Key components:
-	Subnets: Segments of a VPC with defined IP ranges in specific regions.
-	Firewall Rules: Control inbound and outbound traffic to resources.
-	IP Addressing: Differentiated between internal (private) and external (public) IPs.
-3.	Hands-On Tasks:
-o	Set up a GCP account and enabled Compute Engine.
-o	Created a VPC and configured custom subnets using CIDR blocks.
-o	Set up basic firewall rules to manage network traffic.
-o	Created two VM instances in the VPC and tested internal connectivity between them using ping.
+Introduction to GCP:
+Learned about Google Cloud Platform (GCP) as a cloud service provider.
+GCP offers scalable infrastructure with services like compute, storage, and networking.
+Virtual Private Cloud (VPC):
+A VPC is a virtual network in GCP that isolates and manages cloud resources.
+Key components:
+Subnets: Segments of a VPC with defined IP ranges in specific regions.
+Firewall Rules: Control inbound and outbound traffic to resources.
+IP Addressing: Differentiated between internal (private) and external (public) IPs.
+Hands-On Tasks:
+Set up a GCP account and enabled Compute Engine.
+Created a VPC and configured custom subnets using CIDR blocks.
+Set up basic firewall rules to manage network traffic.
+Created two VM instances in the VPC and tested internal connectivity between them using ping.
 
 Day 2: In-Depth Understanding of Virtual Private Clouds (VPC)
 1.	VPC Overview:
