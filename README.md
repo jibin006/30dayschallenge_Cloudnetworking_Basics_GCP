@@ -120,5 +120,22 @@ o	Configured roles: Shared VPC Admin for the host project, Network User for the 
 3.	Verification:
 o	Created a VM in the service project using the shared subnet, confirming connectivity.
 
+Day 10: VPNs – Hybrid Connectivity Setup
+Cloud VPN Overview:
+
+Enables secure, encrypted connections between on-premises networks and GCP VPCs.
+Uses IPsec encryption and supports both standard and HA (High Availability) VPN options.
+Configuration:
+
+Set up a Cloud VPN Gateway and VPN Tunnel in GCP.
+Configured routing (static or dynamic with BGP) and firewall rules to allow VPN traffic.
+Verification:
+
+Tested connectivity from on-prem to GCP by pinging or SSHing into GCP VMs, confirming secure hybrid connectivity.
+
+
+<img width="335" alt="image" src="https://github.com/user-attachments/assets/ccc72171-a930-472e-84d9-78e3f4ff3e54">
+
+
 
 
