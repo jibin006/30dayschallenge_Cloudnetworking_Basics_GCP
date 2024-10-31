@@ -136,6 +136,19 @@ Tested connectivity from on-prem to GCP by pinging or SSHing into GCP VMs, confi
 
 <img width="335" alt="image" src="https://github.com/user-attachments/assets/ccc72171-a930-472e-84d9-78e3f4ff3e54">
 
+Day 11: HA VPN – High Availability VPN Setup
+HA VPN Overview:
+
+High Availability VPN provides a 99.99% SLA for reliable, resilient VPN connections.
+Uses dual tunnels and supports BGP for automatic failover and dynamic routing.
+Configuration:
+
+Set up an HA VPN Gateway with two interfaces for redundancy.
+Configured dual tunnels connecting GCP to the on-premises network for high availability.
+Verification:
+
+Tested failover by disabling one tunnel and confirming seamless traffic flow through the second tunnel.
+
 
 
 
