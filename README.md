@@ -149,6 +149,19 @@ Verification:
 
 Tested failover by disabling one tunnel and confirming seamless traffic flow through the second tunnel.
 
+Day 12: GCP Load Balancers – HTTP(S) Load Balancer Setup
+Load Balancer Overview:
+
+Distributes incoming traffic across instances to improve availability, reliability, and scalability.
+HTTP(S) Load Balancer supports global reach, SSL termination, and path-based routing.
+Configuration:
+
+Created an instance group for backend services.
+Set up an HTTP(S) Load Balancer with frontend IP, backend group, health checks, and URL mapping.
+Testing:
+
+Accessed the load balancer’s IP to verify traffic distribution across instances.
+
 
 
 
