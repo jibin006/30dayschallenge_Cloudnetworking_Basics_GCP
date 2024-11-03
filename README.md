@@ -162,6 +162,17 @@ Testing:
 
 Accessed the load balancer’s IP to verify traffic distribution across instances.
 
+Day 13: Global vs. Regional Load Balancing
+Global Load Balancer Overview:
 
+Routes traffic across multiple regions for high availability and low latency.
+Supports cross-region failover to keep applications running smoothly.
+Configuration:
+
+Created global HTTP(S) Load Balancer with backend instance groups in two regions (us-central1 and europe-west1).
+Set up health checks and configured frontend with a single global IP.
+Testing:
+
+Verified that traffic is directed to the nearest backend and tested failover by stopping instances in one region.
 
 
