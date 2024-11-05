@@ -1,0 +1,59 @@
+GCP Cloud Networking Lab Documentation
+Objective
+This lab provides hands-on experience with essential GCP Cloud Networking concepts. By completing it, you will understand how to set up a robust cloud network architecture covering VPCs, subnets, firewall rules, Cloud NAT, VPC peering, VPNs, and load balancers.
+
+Prerequisites
+A GCP account with billing enabled.
+A new GCP project for the lab.
+Lab Steps Overview
+Step 1: Create a Custom VPC Network
+Purpose: Establish the foundational network.
+Tasks:
+Create a custom VPC named main-vpc with the IP range 10.0.0.0/16.
+Add two subnets:
+subnet-a: 10.0.1.0/24 in us-central1.
+subnet-b: 10.0.2.0/24 in us-east1.
+Step 2: Configure Firewall Rules
+Purpose: Manage network access securely.
+Tasks:
+Allow SSH access from all IPs to VMs in main-vpc.
+Restrict HTTP access to specific IPs.
+Set a default egress rule to block all outgoing traffic except for necessary services.
+Step 3: Set Up Cloud NAT
+Purpose: Enable internet access for VMs without public IPs.
+Tasks:
+Create a Cloud NAT named main-nat for main-vpc and enable NAT for all subnets.
+Step 4: Configure VPC Peering
+Purpose: Enable communication between two VPCs.
+Tasks:
+Create peer-vpc with a unique IP range (e.g., 10.1.0.0/16).
+Set up VPC Peering between main-vpc and peer-vpc.
+Verify connectivity between VMs in main-vpc and peer-vpc.
+Step 5: Create a Cloud VPN for Hybrid Connectivity
+Purpose: Establish a VPN connection to simulate on-premises connectivity.
+Tasks:
+Create a VPN named main-vpn in main-vpc.
+Configure routes to direct traffic between main-vpc and an on-premises IP range (e.g., 192.168.1.0/24).
+Step 6: Configure Load Balancers
+Purpose: Manage internal and external traffic distribution.
+Tasks:
+External Load Balancer:
+Set up an HTTP(S) load balancer with a public IP to direct traffic to a backend service.
+Internal Load Balancer:
+Set up an internal TCP load balancer for private service access within main-vpc.
+Step 7: Testing and Verification
+Purpose: Ensure all configurations function as expected.
+Tasks:
+Test SSH and HTTP access based on firewall rules.
+Check Cloud NAT’s internet access from a VM without an external IP.
+Verify connectivity over VPC Peering.
+Confirm VPN functionality with simulated on-prem network access.
+Test internal and external load balancer routing.
+Summary of Key Concepts and Skills
+VPCs and Subnets: Created VPCs and regional subnets for structured network segmentation.
+Firewall Rules: Configured ingress and egress controls.
+Cloud NAT: Enabled internet access for VMs without public IPs.
+VPC Peering: Set up connectivity between two VPCs.
+VPN: Established secure network connectivity with simulated on-premises resources.
+Load Balancing: Managed traffic distribution for public and internal services.
+This lab consolidates foundational GCP networking skills into one comprehensive project. It serves as a practical reference for configuring and managing cloud networks in GCP, reinforcing both theoretical and practical understanding.
