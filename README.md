@@ -175,4 +175,16 @@ Testing:
 
 Verified that traffic is directed to the nearest backend and tested failover by stopping instances in one region.
 
+Day 14: Internal and External Load Balancing
+Internal Load Balancer Overview:
+
+Distributes traffic within the VPC, keeping it private and isolated from the internet.
+Ideal for private services like databases or internal APIs.
+Configuration:
+
+Set up an Internal TCP/UDP Load Balancer with an internal IP frontend and a backend instance group.
+Added health checks to ensure traffic goes to healthy instances.
+Testing:
+
+Verified connectivity by accessing the load balancer’s internal IP from another VM within the same VPC.
 
