@@ -194,9 +194,7 @@ IAM Overview:
 IAM controls who has access to what network resources and what actions they can perform.
 Used for managing permissions across network resources securely.
 Configuration:
-
 Assigned Network Admin for full control, Security Admin for security settings, and Compute Network Viewer for read-only access.
 Testing:
-
 Verified each role’s permissions to ensure appropriate access and followed least privilege principles.
 
