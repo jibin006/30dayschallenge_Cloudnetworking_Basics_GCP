@@ -200,3 +200,14 @@ Assigned Network Admin for full control, Security Admin for security settings, a
 Testing:
 Verified each role’s permissions to ensure appropriate access and followed least privilege principles.
 
+Day 16: Hierarchical Firewall Policies for Network Security
+Overview:
+
+Hierarchical firewall policies apply consistent security rules across multiple projects at the organization or folder level.
+Configuration:
+
+Created a hierarchical firewall policy with allow/deny rules for specific traffic (e.g., SSH, internet access).
+Attached the policy to the organization level to enforce rules across projects.
+Testing:
+
+Verified policy inheritance by checking rules in affected projects and tested connectivity to confirm security enforcement.
