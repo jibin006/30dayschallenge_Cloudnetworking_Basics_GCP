@@ -222,3 +222,6 @@ Enabled Cloud CDN on an HTTP(S) Load Balancer, caching static assets to offload 
 Testing:
 
 Verified performance boost with cache hits and validated security enhancements like SSL encryption and backend IP masking.
+
+<img width="470" alt="image" src="https://github.com/user-attachments/assets/0b154214-abef-4d52-8823-63db99e6ac17">
+
