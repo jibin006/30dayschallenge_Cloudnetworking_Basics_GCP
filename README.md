@@ -211,3 +211,14 @@ Attached the policy to the organization level to enforce rules across projects.
 Testing:
 
 Verified policy inheritance by checking rules in affected projects and tested connectivity to confirm security enforcement.
+
+Day 17: Cloud CDN – Enhancing Performance and Security
+Cloud CDN Overview:
+
+Caches content at Google’s edge locations to reduce latency and improve load times for users.
+Configuration:
+
+Enabled Cloud CDN on an HTTP(S) Load Balancer, caching static assets to offload traffic from backend servers.
+Testing:
+
+Verified performance boost with cache hits and validated security enhancements like SSL encryption and backend IP masking.
