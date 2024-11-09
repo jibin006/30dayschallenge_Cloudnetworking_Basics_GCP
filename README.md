@@ -225,3 +225,19 @@ Verified performance boost with cache hits and validated security enhancements l
 
 <img width="470" alt="image" src="https://github.com/user-attachments/assets/0b154214-abef-4d52-8823-63db99e6ac17">
 
+Day 17: Hybrid Cloud Networking with Cloud Interconnect
+Overview:
+
+Cloud Interconnect provides private, high-speed connections between on-premises networks and Google Cloud, ideal for hybrid cloud environments.
+Configuration:
+
+Set up Dedicated Interconnect with VLAN attachments to link on-premises infrastructure to Google Cloud VPC.
+Configured BGP for dynamic routing to manage paths between on-prem and cloud resources.
+Testing:
+
+Verified connectivity by accessing GCP resources from on-prem and monitored link performance for reliability.
+
+<img width="627" alt="image" src="https://github.com/user-attachments/assets/688f885d-1fdd-4c2d-90cd-1f1bf9329354">
+
+Interconnect = Private connection to VPC (for hybrid cloud environments).
+Direct Peering = Private connection to Google public services (for API and service access).
