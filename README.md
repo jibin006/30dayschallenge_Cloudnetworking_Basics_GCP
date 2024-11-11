@@ -252,3 +252,17 @@ Created a Dedicated Interconnect with VLAN attachments and set up BGP routing fo
 Testing:
 
 Verified connectivity by accessing GCP resources from on-premises and checked link performance for reliability and low latency.
+
+Day 20: Network Performance Monitoring with GCP Tools
+Overview:
+
+Monitored network traffic and performance using VPC Flow Logs and Network Intelligence Center.
+Configuration:
+
+Enabled VPC Flow Logs to capture traffic details and analyzed logs in Cloud Logging.
+Set up Network Topology to visualize traffic flow and Connectivity Tests to check latency and packet loss.
+Testing:
+
+Used Cloud Monitoring to create alerts, helping to track and address network performance issues in real time.
+
+
