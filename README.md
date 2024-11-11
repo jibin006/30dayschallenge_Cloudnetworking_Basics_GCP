@@ -265,4 +265,14 @@ Testing:
 
 Used Cloud Monitoring to create alerts, helping to track and address network performance issues in real time.
 
+Day 21: DDoS Protection with Cloud Armor
+Cloud Armor Overview:
+
+Provides DDoS protection and application security by filtering malicious traffic before it reaches your application.
+Configuration:
+
+Set up a Cloud Armor security policy with rules for rate limiting, IP blocking, and geo-restrictions, attaching it to an HTTP(S) Load Balancer.
+Testing:
+
+Simulated high traffic loads to verify rate limiting and tested IP/geo-blocking to confirm security policies are applied correctly.
 
