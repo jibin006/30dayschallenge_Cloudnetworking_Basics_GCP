@@ -276,3 +276,44 @@ Testing:
 
 Simulated high traffic loads to verify rate limiting and tested IP/geo-blocking to confirm security policies are applied correctly.
 
+Day 22: Applying Security Best Practices for GCP Networking
+1. Principle of Least Privilege (PoLP) with IAM
+Description: Limit permissions to only what is necessary for each user or service account.
+Actions Taken:
+Reviewed IAM roles, assigned specific roles like Network Admin and Security Admin to appropriate users.
+Verified service accounts have minimum required permissions, reducing risk of unauthorized access.
+2. Secure VPC Design
+Description: Implement a secure VPC structure to control network access and isolate resources.
+Actions Taken:
+Separated production, development, and test environments into different VPCs.
+Configured Shared VPC for centralized control across multiple projects.
+Segmented VPCs into subnets by function (e.g., web, database), allowing selective traffic flow.
+3. Firewall Rules
+Description: Apply restrictive firewall rules to control incoming and outgoing traffic precisely.
+Actions Taken:
+Created restrictive firewall rules, allowing only essential IPs and ports.
+Implemented hierarchical firewall policies for consistent enforcement across all projects.
+Configured specific ingress and egress rules to manage data flow directionally.
+4. Network Monitoring and Logging
+Description: Enable logging and monitoring to track network activity and detect anomalies.
+Actions Taken:
+Enabled VPC Flow Logs for subnets to monitor traffic.
+Set up alerts in Cloud Monitoring to detect unusual activity, such as unexpected traffic spikes.
+Used Network Intelligence Center to analyze network structure and optimize firewall rules.
+5. DDoS Protection with Cloud Armor
+Description: Protect applications from DDoS attacks and restrict traffic from suspicious IPs.
+Actions Taken:
+Configured Cloud Armor policies with rate limiting, IP blocking, and geo-restrictions.
+Tested DDoS protection by simulating high traffic loads and verified that rate limits were enforced.
+6. Secure Data Communication
+Description: Ensure all data in transit is encrypted and secure.
+Actions Taken:
+Enforced TLS/SSL encryption for applications using HTTPS with SSL certificates.
+Enabled Private Google Access for internal, secure connections to Google APIs.
+Used Cloud Interconnect for secure, private connections to on-premises resources.
+7. Regular Audits and Compliance Checks
+Description: Conduct regular reviews to ensure network and resource security.
+Actions Taken:
+Periodically reviewed IAM permissions, firewall rules, and network configurations for alignment with security policies.
+Enabled Security Command Center for ongoing security monitoring and compliance assessment.
+
