@@ -119,6 +119,7 @@ o	Set up a host project with shared subnets and assigned a service project to us
 o	Configured roles: Shared VPC Admin for the host project, Network User for the service project.
 3.	Verification:
 o	Created a VM in the service project using the shared subnet, confirming connectivity.
+Shared VPC can be observed in VPC tab. Select shared VPC and in subnet access we can observe host project and attached projects are the service project
 
 Day 10: VPNs – Hybrid Connectivity Setup
 Cloud VPN Overview:
