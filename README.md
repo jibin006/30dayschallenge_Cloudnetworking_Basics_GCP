@@ -318,3 +318,5 @@ Actions Taken:
 Periodically reviewed IAM permissions, firewall rules, and network configurations for alignment with security policies.
 Enabled Security Command Center for ongoing security monitoring and compliance assessment.
 
+Day 23 | Network Automation: Using Terraform for GCP Networks
+
