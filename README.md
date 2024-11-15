@@ -320,3 +320,46 @@ Enabled Security Command Center for ongoing security monitoring and compliance a
 
 Day 23 | Network Automation: Using Terraform for GCP Networks
 
+ **Objective:**
+- To understand and implement network automation on Google Cloud Platform (GCP) using Terraform, focusing on creating, managing, and automating network infrastructure.
+
+ **Activities:**
+
+1. **Setting Up Terraform Environment:**
+   - Created a project directory (`gcp-network-automation`) and a `main.tf` file for Terraform configurations.
+   - Configured the GCP provider in Terraform, specifying the project ID and region.
+
+2. **Defining Network Resources in Terraform (`main.tf`):**
+   - Defined a **VPC network** resource (`google_compute_network`), setting up a custom VPC to organize cloud resources securely.
+   - Configured a **subnetwork** (`google_compute_subnetwork`) within the VPC with a specific IP range.
+   - Created **firewall rules** (`google_compute_firewall`) to allow SSH access, securing the VPC environment for authorized connections only.
+
+3. **IAM Permissions Setup:**
+   - Configured IAM permissions for the Terraform service account to ensure it could create and manage network resources.
+   - Assigned roles such as **Compute Network Admin** and **Viewer** to the Terraform service account for required access.
+
+4. **Troubleshooting and Debugging:**
+   - Resolved file encoding issues (ensuring `main.tf` is saved in UTF-8) that initially caused Terraform initialization errors.
+   - Addressed **403 permission errors** by verifying and re-assigning roles to the Terraform service account, which allowed for successful network resource creation.
+   - Ensured that the **Compute Engine API** was enabled in GCP, a necessary prerequisite for managing network resources with Terraform.
+
+5. **Terraform Commands:**
+   - **`terraform init`**: Initialized the Terraform environment and installed necessary provider plugins.
+   - **`terraform plan`**: Reviewed the execution plan to confirm changes and verify configurations.
+   - **`terraform apply`**: Applied the configuration, creating the VPC, subnet, and firewall on GCP.
+
+6. **Validating Resources in GCP:**
+   - Checked the GCP Console to ensure the VPC, subnet, and firewall rules were created as defined in Terraform configurations.
+   - Confirmed the successful automation of network resources and verified correct IP ranges and firewall rules.
+
+ **Challenges Faced:**
+- **Permissions Error**: Initially encountered issues with missing IAM permissions for the Terraform service account, which prevented resource creation.
+- **File Encoding Issue**: The `main.tf` file had a non-UTF-8 encoding, causing Terraform to fail during initialization. This was fixed by setting the correct encoding in the text editor.
+- **Role Selection for IAM**: Difficulty locating specific roles (like "Network Admin") in the GCP Console, which delayed permission assignment.
+
+ **Key Takeaways:**
+- Proper configuration and assignment of IAM roles are crucial when working with Terraform on GCP to avoid permission-related errors.
+- UTF-8 encoding is essential for Terraform configuration files to avoid initialization issues.
+- Terraform’s `init`, `plan`, and `apply` commands are key to a structured workflow, allowing for efficient resource automation and management on GCP.
+- Always verify that required APIs (like Compute Engine API) are enabled before attempting to create related resources with Terraform.
+
