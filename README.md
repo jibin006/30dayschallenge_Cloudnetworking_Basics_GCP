@@ -363,3 +363,55 @@ Day 23 | Network Automation: Using Terraform for GCP Networks
 - Terraform’s `init`, `plan`, and `apply` commands are key to a structured workflow, allowing for efficient resource automation and management on GCP.
 - Always verify that required APIs (like Compute Engine API) are enabled before attempting to create related resources with Terraform.
 
+Day 24 Summary | Review: Load Balancing, IAM, Firewall Policies | Lab: Load Balancer Security
+Objectives:
+Review Core Concepts:
+
+Understand the role of Load Balancing in distributing traffic across multiple instances for high availability.
+Review Identity and Access Management (IAM) to control permissions and secure resources.
+Understand Firewall Policies for managing inbound and outbound network traffic in GCP.
+Lab Goal:
+
+Modify an existing load balancer setup.
+Secure the load balancer using IAM roles and firewall rules.
+Step-by-Step Lab Documentation
+1. Modify Load Balancer Setup
+Update Backend Configuration:
+
+Review the backend service configuration and ensure that the instances are correctly assigned to handle traffic.
+Confirm that a health check is properly configured to monitor backend instances' health status.
+Set up Forwarding Rules:
+
+Adjust forwarding rules to route traffic to the load balancer on specific ports (e.g., HTTP or HTTPS).
+Verify that all configurations align with the project requirements.
+2. Secure the Load Balancer with IAM
+Assign IAM Roles:
+
+Define which users or service accounts have access to manage and interact with the load balancer.
+Assign roles such as Viewer, Editor, or Load Balancer Admin to specific accounts based on the principle of least privilege.
+Restrict Permissions for Load Balancer Management:
+
+Ensure only authorized users can modify load balancer settings by configuring IAM roles at the resource level.
+Confirm access restrictions are applied by testing role permissions.
+3. Configure Firewall Policies for Load Balancer Security
+Allow Required Ports and Protocols:
+
+Create firewall rules to allow traffic on required ports (e.g., HTTP port 80, HTTPS port 443).
+Define rules to allow traffic only from trusted IP ranges if applicable.
+Restrict Unwanted Traffic:
+
+Set firewall policies to block unauthorized access to backend instances.
+Configure firewall rules to permit only specific health check IP ranges, ensuring that only health checks can access backend services for status monitoring.
+4. Verification and Testing
+Test the Load Balancer:
+
+Ensure the load balancer distributes traffic as expected.
+Verify that IAM roles and firewall policies are working by testing access permissions and traffic flow.
+Check Health Status:
+
+Monitor the health check status in the GCP Console to ensure the backend services are healthy.
+Ensure that firewall rules don’t interfere with health checks or legitimate traffic.
+
+Summary
+On Day 24, I reviewed key concepts related to load balancing, IAM, and firewall policies, focusing on securing a load balancer. In the lab, I modified a load balancer’s configuration, restricted access through IAM roles, and implemented firewall policies to control network traffic. This setup enhances security by enforcing access controls and limiting network exposure.
+
