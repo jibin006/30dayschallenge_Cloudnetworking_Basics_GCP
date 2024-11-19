@@ -103,6 +103,23 @@ o	Enabled NAT for private subnets to allow outbound internet access.
 o	Verified internet access from a VM without an external IP using Cloud NAT.
 o	Monitored traffic and NAT activity in the Logs Explorer.
 
+A Bastion host in GCP is a secure gateway server that:
+
+Provides controlled access to private network resources
+Acts as a single entry point for administrators
+Sits in a public subnet but can access private network VMs
+Enhances network security by limiting direct external access to internal infrastructure
+Typically used for SSH or RDP connections to manage cloud resources
+
+Key benefits:
+
+Centralized access control
+Reduced attack surface
+Easier network security management
+
+<img width="455" alt="image" src="https://github.com/user-attachments/assets/681b0346-ef55-4014-a658-cba9a2f27d43">
+
+
 Day 8: VPC Peering – How it Works and Configuration
 1.	VPC Peering Overview:
 o	Allows private communication between two VPC networks in GCP over Google’s internal network.
