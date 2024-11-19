@@ -22,16 +22,19 @@ Day 2: In-Depth Understanding of Virtual Private Clouds (VPC)
 o	VPC (Virtual Private Cloud): Isolated, private networks in GCP that enable resource control and network management.
 o	Default VPC: Automatically created by GCP with pre-configured subnets in each region. Easy to use but lacks customization.
 o	Custom VPC: Manually configured, allowing more control over subnets, regions, IP ranges, and firewall rules for better security and network segmentation.
-2.	Key Components:
+
+<img width="874" alt="image" src="https://github.com/user-attachments/assets/d4c1bfc2-1c26-4348-9cea-3bd34a788f98">
+
+3.	Key Components:
 o	Subnets: Define IP ranges within regions.
 o	Firewall Rules: Control ingress and egress traffic to and from resources.
 o	CIDR Blocks: Non-overlapping IP ranges are required for VPCs to ensure proper routing.
-3.	VPC Peering:
+4.	VPC Peering:
 o	Allows private communication between two VPCs.
 o	Important to ensure non-overlapping IP ranges and proper firewall rules.
 o	Requires mutual acceptance of the peering connection by both VPCs.
 o	Need to configure routes and firewall rules for communication.
-4.	Hands-On Tasks:
+5.	Hands-On Tasks:
 o	Created multiple custom VPCs with different CIDR ranges.
 o	Explored default VPC and created new custom VPCs to understand the differences.
 o	Tested network isolation between VPCs.
