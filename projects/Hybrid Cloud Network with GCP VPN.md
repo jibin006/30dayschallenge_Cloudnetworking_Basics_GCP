@@ -45,7 +45,7 @@ This project demonstrates a robust hybrid cloud networking solution using Google
 
 ### 1. Script
 
-
+https://github.com/jibin006/30dayschallenge_Cloudnetworking_Basics_GCP/blob/main/projects/Script_hybrid.tf
 
 ```
 
