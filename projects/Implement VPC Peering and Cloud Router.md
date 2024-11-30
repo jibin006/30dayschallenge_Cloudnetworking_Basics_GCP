@@ -131,7 +131,7 @@ Verify the status of the peering connections. They should show as **Active**.
 ---
 
 ## **Skills Demonstrated**
-- **VPC Peering**: Connected two VPCs for seamless communication.
+- **VPC Peering**: Connected two VPCs for seamless communication. Understand that vpc cannot communicate without peering.
 - **Cloud Router**: Configured dynamic route advertisement.
 - **Firewall Rules**: Controlled and secured inter-VPC traffic.
 - **Cross-VPC Communication**: Verified connectivity between resources.
