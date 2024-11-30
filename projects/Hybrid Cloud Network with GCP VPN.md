@@ -1,4 +1,4 @@
-# Hybrid Cloud Network with GCP VPN
+# Hybrid Cloud Network with GCP VPN using terraform
 
 ## 🌐 Project Overview
 
