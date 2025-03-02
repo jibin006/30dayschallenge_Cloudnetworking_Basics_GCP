@@ -191,14 +191,15 @@ Let me know if you need help with any step! 🚀
 ✅ Fix:
 Ensure the OAC policy is correctly set (see bucket policy above).
 Check CloudFront logs:
-sh
-Copy
-Edit
+---
 aws cloudfront get-distribution --id E2ASCAVMELXWUA
+---
+
 ❌ Issue 6: https://d2vsgg3c1ktpks.cloudfront.net/ Shows Access Denied
 ✅ Fix: Set a Default Root Object
 Go to CloudFront → Distribution → Edit Behavior
 Set Default Root Object to website.html.
+
 ❌ Issue 7: aws s3api put-bucket-acl Fails Due to BlockPublicAcls
 ✅ Fix:
 AWS blocks public ACLs by default. Instead, use OAC and update the bucket policy.
