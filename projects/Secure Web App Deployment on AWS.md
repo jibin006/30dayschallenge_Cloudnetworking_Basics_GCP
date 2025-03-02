@@ -191,9 +191,9 @@ Let me know if you need help with any step! 🚀
 ✅ Fix:
 Ensure the OAC policy is correctly set (see bucket policy above).
 Check CloudFront logs:
----
+
 aws cloudfront get-distribution --id E2ASCAVMELXWUA
----
+
 
 ❌ Issue 6: https://d2vsgg3c1ktpks.cloudfront.net/ Shows Access Denied
 ✅ Fix: Set a Default Root Object
