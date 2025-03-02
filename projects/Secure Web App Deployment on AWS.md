@@ -187,6 +187,22 @@ Let me know if you need help with any step! 🚀
 **Cause:** Missing bucket policy for public access.
 **Solution:** Updated S3 bucket policy to allow read access.
 
+❌ Issue 5: Access Denied when Accessing CloudFront URL
+✅ Fix:
+Ensure the OAC policy is correctly set (see bucket policy above).
+Check CloudFront logs:
+sh
+Copy
+Edit
+aws cloudfront get-distribution --id E2ASCAVMELXWUA
+❌ Issue 6: https://d2vsgg3c1ktpks.cloudfront.net/ Shows Access Denied
+✅ Fix: Set a Default Root Object
+Go to CloudFront → Distribution → Edit Behavior
+Set Default Root Object to website.html.
+❌ Issue 7: aws s3api put-bucket-acl Fails Due to BlockPublicAcls
+✅ Fix:
+AWS blocks public ACLs by default. Instead, use OAC and update the bucket policy.
+
 ---
 
 ## 📚 Key Learnings
@@ -196,16 +212,6 @@ Let me know if you need help with any step! 🚀
 - **AWS IAM Roles & Policies**: Granting least-privilege access.
 - **Troubleshooting AWS Issues**: Debugging SSM connectivity and ALB routing problems.
 
----
-
-## 📂 Directory Structure
-```
-aws-web-app/
-├── terraform/        # Terraform code for infrastructure provisioning
-├── scripts/          # Shell scripts for EC2 setup
-├── docs/             # Documentation & architecture diagrams
-├── README.md         # Project Documentation (This file)
-```
 
 ---
 
